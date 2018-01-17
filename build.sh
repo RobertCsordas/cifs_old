@@ -7,6 +7,8 @@ fi
 
 if [[ `uname -r|grep ARCH` == "" ]]; then
 	apt-get install linux-headers-$(uname -r)
+else
+	pacman -Sy linux-headers
 fi
 
 make clean
