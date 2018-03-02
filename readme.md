@@ -5,10 +5,15 @@ Why?
 
 It's important because Meltdown patches are only included in new kernels. Also newer drivers will probably want newer kernels.
 
+Supported kernels
+=================
+
+Tested on 4.13, 4.14, 4.15.
+
 Installation
 ============
 
-Run sudo ./build.sh and reboot. Tested on ArchLinux and Ubuntu (4.13-4.14 kernels).
+Run sudo ./build.sh and reboot. Tested on ArchLinux and Ubuntu.
 
 It will be compiled only for the current kernel, so after every kernel update you'll have to re-run build.sh.
 
@@ -23,4 +28,4 @@ How it works?
 =============
 
 It is copied from 4.12, working kernels fs/cifs folder, a custom makefile is added, and some constants are moved to config.h file (because there is no graphical config utility here).
-So you'll basically get 4.12 CIFS module on 4.13 and 4.14 kernels.
+So you'll basically get 4.12 CIFS module on newer kernels.
